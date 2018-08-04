@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5f76b3</color>
+    <color name="colorPrimaryDark">#5f76b3</color>
+    <color name="colorAccent">#8152ab</color>
+    <color name="graphBackground">#ffffff</color>
+    <color name="graphLines">#aeaeae</color>
+    <color name="graphSeries">#585858</color>
+</resources>

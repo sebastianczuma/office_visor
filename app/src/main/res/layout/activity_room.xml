@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebastianczuma.officevisor.Activities.FloorActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_room_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tlo_room">
+
+        <RelativeLayout
+            android:id="@+id/edit_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/add_device"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_or_remove_button"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_add_black_24dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttons_up_background"
+            android:gravity="center"
+            android:text="Edytuj"
+            android:textColor="#fff" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_buttons_container"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/room_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Kopisto 17A"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/number_of_devices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0 urządzeń"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_for_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

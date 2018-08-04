@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_device_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebastianczuma.officevisor.Activities.DeviceInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_device_info"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="60dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Sensor"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/device_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="w"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/device_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="190dp"
+                android:layout_marginTop="100dp"
+                android:text="."
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="50dp"
+                android:layout_weight="0.07"
+                android:text="rozwiń więcej"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_room_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Dane historyczne"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/graphBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_room_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Alarmy"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Uruchamiane po przekroczeniu zakresu danych"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Alarm jest wyłączony"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/minValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wartość minimalna"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/minTempButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/buttons_up_background"
+                        android:text="Ustaw"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/maxValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wartość maksymalna"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/maxTempButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/buttons_up_background"
+                        android:text="Ustaw"
+                        android:textColor="#fff" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_room_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Nazwa i typ sensora"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Temperatura 1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/device_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Czujnik temperatury"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_room_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Lokalizacja"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/device_localisation_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Budynek"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/device_localisation_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Poziom"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/device_localisation_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Pomieszczenie"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_room_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Atrybuty"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/ulubione"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Ulubione: tak"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_room_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Umiejscownie czujnika"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Reprezentuje położenie czujnika w rzucie poziomym pomieszczenia"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10px"
+                    android:columnWidth="40dp"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.sebastianczuma.officevisor.Activities.AddRoom">
+
+    <RelativeLayout
+        android:id="@+id/activity_add_room_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/adroom"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/activity_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Dodaj nowe pomieszczenie w budynku wincentego pola 2 na poziomie 123"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/add_new_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/buttons_add_new"
+            android:fontFamily="sans-serif"
+            android:text="Dodaj"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/one_room_background">
+
+            <TextView
+                android:id="@+id/room_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Nazwa pomieszczenia"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/new_room_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/room_name"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="np. Biuro szefa"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/room_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/new_room_name"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Typ pomieszczenia"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/choose_room_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/room_type"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_blue"
+                android:fontFamily="sans-serif"
+                android:text="Wybierz..."
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_for_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">OfficeVisor</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="title_activity_add_room">AddRoom</string>
+
+    <!-- Universal Strings -->
+    <string name="ok">OK</string>
+    <string name="cancel">Anuluj</string>
+    <string name="edit">Edytuj</string>
+    <string name="done">Gotowe</string>
+    <string name="floor">Poziom</string>
+
+    <!-- MainActivity -->
+    <string name="warning">Uwaga</string>
+    <string name="question_delete_building">Czy na pewno usunąć konfigurację budynku</string>
+    <string name="favourites">Ulubione</string>
+    <string name="add">Dodaj</string>
+    <string name="remove_building">Usuń</string>
+
+    <!-- Add building -->
+    <string name="building_name">Nazwa budynku</string>
+    <string name="building_name_hint">np. Wincentego Pola 2</string>
+    <string name="add_new_building_button">Dodaj</string>
+    <string name="activity_add_building_info">Dodaj nowy budynek</string>
+
+    <!-- Activity type ADD universal strings -->
+    <string name="choose">Wybierz...</string>
+
+</resources>

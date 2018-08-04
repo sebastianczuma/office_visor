@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebastianczuma.officevisor.Activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_1">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs_titles"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tabs_container"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/edit_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/delete_building"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttons_up_background"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/remove_building"
+                android:textColor="#fff" />
+
+            <ImageButton
+                android:id="@+id/add_floor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_or_remove_button"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_add_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/remove_floor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/add_floor"
+                android:background="@drawable/add_or_remove_button"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_remove_black_24dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttons_up_background"
+            android:paddingEnd="9dp"
+            android:paddingStart="9dp"
+            android:text="@string/edit"
+            android:textColor="#fff"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_for_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

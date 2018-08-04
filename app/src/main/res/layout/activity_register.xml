@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5f76b3"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pole_email"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:text="ZAREJESTRUJ"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="====== swoje ======"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:text="NOWE KONTO"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textIsSelectable="true"
+            android:textSize="29sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/pole_email"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/pole_imie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_rejestracja"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="E-MAIL"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/pole_imie"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_rejestracja"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="IMIĘ"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/pole_nazwisko"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pole_imie"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_rejestracja"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="NAZWISKO"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/pole_haslo"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pole_nazwisko"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_rejestracja"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="HASŁO"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/pole_powtorz_haslo"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pole_haslo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_rejestracja"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="POWTÓRZ HASŁO"
+        android:inputType="textPassword" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/pole_powtorz_haslo">
+
+        <Button
+            android:id="@+id/przycisk_rejestracja"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/przycisk_rejestruj_startactivity"
+            android:text="Rejestracja"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>

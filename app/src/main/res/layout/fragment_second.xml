@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/buildingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Wincentego Pola 21"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/numberOfFloors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="16 poziomów"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/numberOfRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="16 pomieszczeń"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/numberOfDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="16 urządzeń"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20px"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

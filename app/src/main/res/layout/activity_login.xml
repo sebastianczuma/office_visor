@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5f76b3"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/login">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:text="ZALOGUJ SIĘ"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="======== do ========"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:text="TWOJEGO KONTA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_login"
+        android:ems="10"
+        android:hint="E-MAIL"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/zaloguj"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/haslo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/przycisk_login_startactivity"
+        android:text="ZALOGUJ"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/haslo"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tlo_wprowadzanie_tekstu_login"
+        android:ems="10"
+        android:hint="HASŁO"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/zaloguj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="NIE MOŻESZ PRZYPOMNIEĆ SOBIE HASŁA?"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/edit_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fff">
+
+        <Button
+            android:id="@+id/zarejestruj"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/przycisk_rejestruj"
+            android:text="LUB ZAREJESTRUJ SIĘ" />
+    </LinearLayout>
+</RelativeLayout>
